@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sobit Shrestha</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobit Shrestha | Aspiring QA Automation Engineer</title>
+  <meta name="description" content="Portfolio of Sobit Shrestha, a BCA student from Nepal learning QA automation with Playwright and TypeScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hi, I'm Sobit</h1>
-  <p>I am a BCA student learning QA automation with Playwright and TypeScript.</p>
-  <a href="https://github.com/sobitshrestha25/saucedemo-playwright-pom">My SauceDemo Playwright project</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home">Sobit Shrestha</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="role">Sobit Shrestha, Aspiring QA Automation Engineer</p>
+        <h1>Exploring quality. Building automation. Growing through practice.</h1>
+        <p class="lead">I'm a QA enthusiast exploring software testing and test automation through hands-on projects. Currently focused on Playwright and TypeScript, I'm building practical experience and expanding my understanding of software quality.</p>
+        <ul class="chips" aria-label="Focus areas">
+          <li>Playwright</li>
+          <li>TypeScript</li>
+          <li>Software Testing</li>
+        </ul>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my projects</a>
+          <a class="btn" href="#contact">Connect with me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img class="photo" src="photo.jpg" alt="Portrait of Sobit Shrestha" width="320" height="320">
+        <div class="report" id="report" aria-label="Test run result from my SauceDemo project">
+          <p class="report-title">saucelogin.spec.ts</p>
+          <ul>
+            <li>valid login</li>
+            <li>locked out user</li>
+            <li>wrong password</li>
+            <li>empty username and password</li>
+            <li>very long username</li>
+            <li>case-sensitive username</li>
+          </ul>
+          <p class="report-total" id="reportTotal">9 passed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap narrow">
+      <h2>A little about me</h2>
+      <p>I'm a BCA student from Nepal developing my skills in software quality assurance. I enjoy exploring application behavior, designing test scenarios, and using automation to verify that software works as expected.</p>
+      <p>My current focus is Playwright with TypeScript, where I'm building practical automation projects and improving my approach to test design, assertions, debugging, and maintainable code.</p>
+      <p>I'm also exploring how generative AI can support learning and QA experimentation. Over time, I aim to expand into API testing, performance testing, and testing AI-powered applications.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <h2>My technical toolkit</h2>
+      <p class="sub">Skills I have practiced so far. This list grows as my experience grows.</p>
+      <dl class="skills">
+        <div>
+          <dt>Automation testing</dt>
+          <dd>Playwright, TypeScript, Page Object Model, assertions, locators</dd>
+        </div>
+        <div>
+          <dt>Software testing</dt>
+          <dd>Positive testing, negative testing, edge-case testing, test scenario design. End-to-end testing is in progress.</dd>
+        </div>
+        <div>
+          <dt>Tools and workflow</dt>
+          <dd>VS Code, Git, GitHub</dd>
+        </div>
+        <div class="soft">
+          <dt>Exploring next</dt>
+          <dd>API testing, performance testing, GenAI-assisted QA, AI testing</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Practical work</h2>
+      <article class="project">
+        <div class="project-head">
+          <h3>SauceDemo login automation</h3>
+          <span class="badge done">Available</span>
+        </div>
+        <p class="stack">Playwright, TypeScript, Page Object Model</p>
+        <p>Automated login scenarios covering positive, negative, and selected edge cases. Focused on reusable page interactions and validating expected login behavior.</p>
+        <a class="link" href="https://github.com/sobitshrestha25/saucedemo-playwright-pom" target="_blank" rel="noopener">View project on GitHub</a>
+      </article>
+      <article class="project">
+        <div class="project-head">
+          <h3>SauceDemo end-to-end testing</h3>
+          <span class="badge wip">In progress</span>
+        </div>
+        <p class="stack">Inventory, cart, checkout, order completion</p>
+        <p>Expanding the existing project to cover the complete shopping journey, with assertions at each important stage.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="wrap narrow">
+      <h2>Let's connect</h2>
+      <p>I'm open to connecting with QA professionals, learning from the testing community, collaborating on projects, and exploring suitable entry-level QA opportunities.</p>
+      <div class="touch">
+        <a class="btn primary big" href="mailto:sovitshrestha9841@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Get in touch
+        </a>
+        <ul class="socials" aria-label="Find me online">
+          <li><a href="mailto:sovitshrestha9841@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/sobitshrestha9841" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+          <li><a href="https://github.com/sobitshrestha25" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a></li>
+        </ul>
+        <p class="email-line">sovitshrestha9841@gmail.com</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">&copy; <span id="year">2026</span> Sobit Shrestha. Built with HTML, CSS, and JavaScript.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
